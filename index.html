@@ -1,10 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>Мой первый сайт</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AriMerre | Портфолио</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #0f172a; /* Тёмный стильный фон */
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .container {
+            text-align: center;
+            padding: 40px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+        h1 { font-size: 3rem; margin: 0; background: linear-gradient(to right, #60a5fa, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        p { font-size: 1.2rem; color: #94a3b8; }
+        .badge { display: inline-block; padding: 5px 15px; background: #334155; border-radius: 20px; font-size: 0.9rem; margin-top: 10px; }
+    </style>
 </head>
 <body>
-    <h1>Привет, мир!</h1>
-    <p>Мой сайт на GitHub заработал.</p>
+    <div class="container">
+        <h1>AriMerre</h1>
+        <p>Начинающий Frontend-разработчик</p>
+        <div class="badge">Сайт официально запущен! ✨</div>
+    </div>
 </body>
 </html>
