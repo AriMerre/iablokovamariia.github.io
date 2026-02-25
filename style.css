@@ -38,23 +38,23 @@ h1 {
 .card--hero{
   grid-column: span 6;
   grid-row: span 1;
-  
+  border-radius: 24px;
 }
 
 .card--right{
   grid-column: span 2;
   grid-row: span 1;
-  
+  border-radius: 24px;
 }
 
 .card--leftBottom{
   grid-column: span 3;
-  
+  border-radius: 24px;
 }
 
 .card--rightBottom{
   grid-column: span 5;
- 
+ border-radius: 24px;
 }
 
 /* Имя поверх верхней левой карточки */
@@ -124,9 +124,25 @@ nav {
 }
 
 
+.image-collage {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.img-large { grid-row: span 2; }
+.image-collage img, .project-card img {
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    line-height: 1.5;
     gap: 20px;
 }
 
