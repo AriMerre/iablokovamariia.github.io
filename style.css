@@ -60,7 +60,7 @@ h1 {
 /* Имя поверх верхней левой карточки */
 .name{
   position: absolute;
-  top: -45px;
+  top: -40px;
   left: 10px;
     font-size: 4rem; 
     font-weight: 400;
@@ -90,6 +90,7 @@ h1 {
 h2 {
         font-size: 4rem;
         font-weight: 400;
+        padding: 0 20px;
  }
 
 .year {
@@ -111,6 +112,7 @@ nav {
     padding: 40px 0;
     font-size: 1.1rem; 
     font-weight: 500; 
+    padding: 0 20px;
 }
 
 
@@ -121,6 +123,7 @@ nav {
     line-height: 1.5;
     margin: 40px 0;
     font-weight: 200; 
+    padding: 0 20px;
 }
 
 
@@ -148,9 +151,10 @@ nav {
 
 .project-card h3 { 
     font-size: 1.5rem; 
-    font-weight: 200;                         
+    font-weight: 200; 
+    padding: 0 20px;
 }
-.project-card p { font-size: 1.1rem; color: #666; font-weight: 200; }
+.project-card p { font-size: 1.1rem; color: #666; font-weight: 200; padding: 0 20px;}
 
 /* Адаптивность для мобильных */
 @media (max-width: 768px) {
