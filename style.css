@@ -82,7 +82,7 @@ nav {
 }
 
 .project-card h3 { 
-    margin-bottom: 3px;
+    margin-bottom: 0.15rem;
     font-size: 1.5rem; 
     font-weight: 200;                         
 }
