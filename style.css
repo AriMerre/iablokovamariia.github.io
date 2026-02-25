@@ -24,24 +24,51 @@ h1 {
     height: 600px; /* Общая высота блока */
 }
 
-.image-collage div {
-    overflow: hidden;      /* Обрезает всё, что выходит за границы скругления */
-    border-radius: 40px;   /* Те самые "дизайнерские" скругленные углы */
+/* Контейнер для сетки */
+.image-collage {
+    display: grid;
+    /* Делаем 2 колонки: левая чуть шире (1.5 части), правая чуть уже (1 часть) */
+    grid-template-columns: 1.5fr 1fr; 
+    /* Создаем 2 строки одинаковой высоты */
+    grid-template-rows: 250px 250px; 
+    gap: 20px; /* Расстояние между фото */
+    margin: 40px 0;
 }
 
-.image-collage img {
+/* Настройки для всех оберток картинок */
+.image-collage div {
+    border-radius: 22px; /* Сильное скругление как на референсе */
+    overflow: hidden;    /* Чтобы картинка не вылезала за скругленные углы */
+}
+
+/* Магия для левой колонки: заставляем её занять 2 строки */
+.img-large {
+    grid-row: span 2; 
+}
+
+/* Сами картинки внутри блоков */
+.hero-grid img {
     width: 100%;
     height: 100%;
-    object-fit: cover;     /* Магия! Картинка подстраивается под форму без искажений */
+    object-fit: cover; /* Картинка заполняет блок, обрезаясь по краям (как Fill в Figma) */
     display: block;
 }
 
-/* Левая картинка растягивается на 2 строки вниз */
-.img-large {
-    grid-row: span 2;
+/* Адаптация для мобильных: выстраиваем всё в одну колонку */
+@media (max-width: 768px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        height: auto;
+    }
+    .img-large {
+        grid-row: span 1;
+        height: 400px;
+    }
+    .img-small {
+        height: 250px;
+    }
 }
-
-
 
 .projects-header h2 {
     display: flex;
