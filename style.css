@@ -61,8 +61,13 @@ h1 {
 /* Имя поверх верхней левой карточки */
 .name{
   position: absolute;
+  top: 16px;
+  left: 16px;
+    font-size: 4rem; 
+    font-weight: 400;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
   z-index: 2;
-}
 
 /* адаптив: на телефоне всё в одну колонку */
 @media (max-width: 800px){
