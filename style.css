@@ -60,7 +60,7 @@ h1 {
 /* Имя поверх верхней левой карточки */
 .name{
   position: absolute;
-  top: -20px;
+  top: -45px;
   left: 10px;
     font-size: 4rem; 
     font-weight: 400;
