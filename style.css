@@ -1,22 +1,36 @@
 body {
     font-family: 'Outfit', sans-serif; 
     margin: 0;
-    padding: 0 30px;
+    padding: 0 40px;
     background-color: #fff;
     color: #000;
     -webkit-font-smoothing: antialiased;
 }
 
 h1 {
-    font-size: 4rem; 
-    font-weight: 600;
+    font-size: 3.5rem; 
+    font-weight: 400;
     letter-spacing: -2px;
     margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 2.5rem;
-    font-weight: 500;
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.projects-header h2 {
+    display: flex;
+    justify-content: space-between; /* Расталкивает текст и дату в разные стороны */
+    align-items: baseline;          /* Выравнивает их по нижней линии текста */
+    width: 100%;
+    margin-bottom: 30px;            /* Отступ до карточек */
+}
+
+.year {
+    font-size: 1rem;              /* Уменьшаем размер */
+    font-weight: 400;             
+    color: #000;                   
 }
 
 p {
@@ -27,8 +41,8 @@ p {
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
-    font-weight: bold;
+    padding: 40px 0;
+    font-weight: medium;
 }
 
 
