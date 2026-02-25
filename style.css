@@ -61,11 +61,6 @@ h1 {
 /* Имя поверх верхней левой карточки */
 .name{
   position: absolute;
-  top: 16px;
-  left: 16px;
-  font-size: 40px;
-  font-weight: 700;
-  color: #111;
   z-index: 2;
 }
 
