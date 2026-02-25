@@ -18,7 +18,6 @@ h1 {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   gap: 20px;
-  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -61,7 +60,7 @@ h1 {
 /* Имя поверх верхней левой карточки */
 .name{
   position: absolute;
-  top: 16px;
+  top: 10px;
   left: 16px;
     font-size: 4rem; 
     font-weight: 400;
