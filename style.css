@@ -16,9 +16,9 @@ h1 {
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   gap: 20px;
-  padding: 0 40px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -37,7 +37,7 @@ h1 {
 
 /* Раскладка как на референсе */
 .card--hero{
-  grid-column: span 4;
+  grid-column: span 6;
   grid-row: span 1;
   
 }
@@ -54,7 +54,7 @@ h1 {
 }
 
 .card--rightBottom{
-  grid-column: span 3;
+  grid-column: span 5;
  
 }
 
