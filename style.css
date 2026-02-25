@@ -14,6 +14,34 @@ h1 {
     margin-bottom: 20px;
 }
 
+.image-collage {
+    display: grid;
+    /* Создаем две колонки: левая в два раза шире правой */
+    grid-template-columns: 2fr 1fr; 
+    /* Создаем две строки */
+    grid-template-rows: 1fr 1fr; 
+    gap: 20px; /* Расстояние между картинками */
+    height: 600px; /* Общая высота блока */
+}
+
+.image-collage div {
+    overflow: hidden;      /* Обрезает всё, что выходит за границы скругления */
+    border-radius: 40px;   /* Те самые "дизайнерские" скругленные углы */
+}
+
+.image-collage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     /* Магия! Картинка подстраивается под форму без искажений */
+    display: block;
+}
+
+/* Левая картинка растягивается на 2 строки вниз */
+.img-large {
+    grid-row: span 2;
+}
+
+
 
 .projects-header h2 {
     display: flex;
