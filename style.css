@@ -108,7 +108,7 @@ p {
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 40px 10;
+    padding: 40px 10px;
     font-size: 1.1rem; 
     font-weight: 500; 
 }
