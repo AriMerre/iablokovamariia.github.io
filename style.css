@@ -8,16 +8,12 @@ body {
 }
 
 h1 {
-    font-size: 3.5rem; 
+    font-size: 4rem; 
     font-weight: 400;
     letter-spacing: -2px;
     margin-bottom: 20px;
 }
 
-h2 {
-    font-size: 3.5rem;
-    font-weight: 400;
-}
 
 .projects-header h2 {
     display: flex;
@@ -25,6 +21,11 @@ h2 {
     align-items: baseline;          /* Выравнивает их по нижней линии текста */
     width: 100%;
     margin-bottom: 30px;            /* Отступ до карточек */
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 400;
 }
 
 .year {
@@ -42,6 +43,7 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 40px 0;
+    font-size: 1rem; 
     font-weight: medium;
 }
 
@@ -63,10 +65,11 @@ nav {
 
 
 .about-text {
-    font-size: 1.2rem;
-    max-width: 800px;
+    font-size: 1.5rem;
+    max-width: 900px;
     line-height: 1.5;
     margin: 40px 0;
+    font-weight: 200; 
 }
 
 
@@ -76,8 +79,12 @@ nav {
     gap: 20px;
 }
 
-.project-card h3 { margin-bottom: 5px; }
-.project-card p { font-size: 0.8rem; color: #666; }
+.project-card h3 { 
+    margin-bottom: 5px;
+    font-size: 1.5rem; 
+    font-weight: 200;                         
+}
+.project-card p { font-size: 0.8rem; color: #666; font-weight: 200; }
 
 /* Адаптивность для мобильных */
 @media (max-width: 768px) {
