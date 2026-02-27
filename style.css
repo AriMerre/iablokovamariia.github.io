@@ -25,6 +25,8 @@ h1 {
     font-size: 4rem; 
     font-weight: 400;
     letter-spacing: -2px;
+    margin-bottom: 20px;
+    color: #000;
 }
 
 .wrapper {
@@ -71,18 +73,6 @@ h1 {
  border-radius: 24px;
 }
 
-/* Имя поверх верхней левой карточки */
-.name{
-  position: absolute;
-  top: -40px;
-  left: 8px;
-    font-size: 4rem; 
-    font-weight: 400;
-    letter-spacing: -2px;
-    margin-bottom: 20px;
-    color: #000;
-  z-index: 2;
-}
 
     
 /* адаптив: на телефоне всё в одну колонку */
