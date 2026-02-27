@@ -10,7 +10,7 @@ body {
 .hero {
     background-color: #ffffff; /* Белый фон для первой части */
     margin: 0 -40px;          /* Растягиваем до краев экрана, если у body есть отступы */
-    padding: 40px 40px 60px 40px; /* Возвращаем внутренние отступы для контента */
+    padding: 20px 60px 60px 40px; /* Возвращаем внутренние отступы для контента */
     
     /* Тень: первый блок — нижняя, второй (после запятой) — верхняя */
     box-shadow: 
@@ -25,7 +25,7 @@ h1 {
     font-size: 4rem; 
     font-weight: 400;
     letter-spacing: -2px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 0 10px;
     color: #000;
 }
