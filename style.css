@@ -2,7 +2,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 80%;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
@@ -13,9 +13,9 @@ nav {
     
     /* Используем margin, чтобы отодвинуть меню от краев экрана, 
        как на втором макете. Подберите точные значения по макету */
-    margin-top: 60px; 
+    margin-top: 50px; 
     margin-left: 40px;
-    margin-right: 100px;
+    margin-right: 40px;
     
     /* Сохраняем ваши шрифты и плавный переход */
     font-size: 1.6rem; 
