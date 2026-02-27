@@ -10,7 +10,7 @@ body {
 .hero {
     background-color: #ffffff; /* Белый фон для первой части */
     margin: 0 -40px;          /* Растягиваем до краев экрана, если у body есть отступы */
-    padding: 40px 40px 60px 40px; /* Возвращаем внутренние отступы для контента */
+    padding: 20px 40px 40px 40px; /* Возвращаем внутренние отступы для контента */
     
     /* Тень: первый блок — нижняя, второй (после запятой) — верхняя */
     box-shadow: 
@@ -22,10 +22,10 @@ body {
 }
 
 h1 {
-    font-size: 4.2rem; 
-    font-weight: 450;
+    font-size: 5rem; 
+    font-weight: 400;
     letter-spacing: -2px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 0 20px;
     color: #000;
 }
@@ -94,22 +94,22 @@ h1 {
 }
 
 h2 {
-        font-size: 4.2rem;
-        font-weight: 450;
-        padding: 0 10px;
+        font-size: 5rem;
+        font-weight: 400;
+        padding: 0 20px;
  }
 
 .year {
-        font-size: 1.3rem;            
-        font-weight: 450;             
+        font-size: 1.6rem;            
+        font-weight: 400;             
         color: #000;                   
 }
 
 
 
 p {
-    font-weight: 350; 
-    line-height: 1.3;
+    font-weight: 300; 
+    line-height: 1.5;
 }
 
 .accent {
@@ -119,20 +119,20 @@ p {
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 40px 20px 15px;
-    font-size: 1.3rem; 
-    font-weight: 550; 
+    padding: 40px 20px 30px;
+    font-size: 1.6rem; 
+    font-weight: 500; 
 }
 
 
 
 .about-text {
-    font-size: 1.5rem;
-    max-width: 900px;
-    line-height: 1.7;
+    font-size: 1.8rem;
+    max-width: 1000px;
+    line-height: 1.5;
     margin: 40px 0;
-    font-weight: 250; 
-    padding: 0 10px;
+    font-weight: 200; 
+    padding: 0 20px;
 }
 
 /* --- PROJECTS SECTION --- */
@@ -161,11 +161,11 @@ nav {
 }
 
 .project-card h3 { 
-    font-size: 1.7rem; 
+    font-size: 1.8rem; 
     font-weight: 250; 
     padding: 0 10px;
 }
-.project-card p { font-size: 1.3rem; color: #666; font-weight: 250; padding: 0 10px;}
+.project-card p { font-size: 1.5rem; color: #666; font-weight: 250; padding: 0 10px;}
 
 /* Адаптивность для мобильных */
 @media (max-width: 768px) {
