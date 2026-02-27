@@ -1,16 +1,14 @@
 window.addEventListener('scroll', () => {
-    const nav = document.querySelector('.nav-container');
-    const servicesSection = document.querySelector('.services-section'); // Убедитесь, что у черной секции такой класс
+    const nav = document.querySelector('nav'); // У вас в CSS просто nav
+    const services = document.querySelector('.services'); // Проверьте класс вашей черной секции!
     
-    // Получаем координаты черной секции
-    const sectionTop = servicesSection.offsetTop;
-    const sectionHeight = servicesSection.offsetHeight;
-    const scrollPosition = window.scrollY;
-
-    // Если мы прокрутили до черной секции, но еще не вышли из нее
-    if (scrollPosition >= sectionTop - 50 && scrollPosition < (sectionTop + sectionHeight - 50)) {
-        nav.classList.add('white-nav');
-    } else {
-        nav.classList.remove('white-nav');
+    if (services) {
+        const top = services.getBoundingClientRect().top;
+        // Если верх черной секции дошел до верха экрана
+        if (top <= 60) { 
+            nav.classList.add('white-nav');
+        } else {
+            nav.classList.remove('white-nav');
+        }
     }
 });
