@@ -163,9 +163,9 @@ nav {
 .project-card h3 { 
     font-size: 1.8rem; 
     font-weight: 200; 
-    padding: -10 20px;
+    padding: -10px 20px;
 }
-.project-card p { font-size: 1.5rem; color: #666; font-weight: 200; padding: -10 20px;}
+.project-card p { font-size: 1.5rem; color: #666; font-weight: 200; padding: -10px 20px;}
 
 /* Адаптивность для мобильных */
 @media (max-width: 768px) {
