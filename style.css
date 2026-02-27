@@ -90,7 +90,7 @@ h1 {
     justify-content: space-between; /* Расталкивает текст и дату в разные стороны */
     align-items: baseline;          /* Выравнивает их по нижней линии текста */
     width: 100%;
-    margin-bottom: 20px;            /* Отступ до карточек */
+    margin-bottom: 10px;            /* Отступ до карточек */
 }
 
 h2 {
@@ -181,7 +181,7 @@ nav {
     background-color: #000;
     color: #fff;
     padding: 100px 40px;
-    margin: 0 20px; /* Растягиваем черный фон на всю ширину, если у body есть отступы */
+    margin: 0 -40px; /* Растягиваем черный фон на всю ширину, если у body есть отступы */
 }
 
 .services-container {
@@ -192,9 +192,10 @@ nav {
 }
 
 .services-title {
-    font-size: 3.5rem;
+    font-size: 5rem;
     font-weight: 400;
     margin: 0;
+    margin-bottom: 10px; 
 }
 
 .services-list {
