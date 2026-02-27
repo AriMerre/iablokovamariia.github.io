@@ -53,6 +53,7 @@ h1 {
   grid-column: span 6;
   grid-row: span 1;
   border-radius: 24px;
+  clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 20%);
 }
 
 .card--right{
