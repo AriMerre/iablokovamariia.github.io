@@ -1,4 +1,6 @@
 nav {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.7); /* Полупрозрачный белый */
     position: fixed;
     top: 0;
     left: 0;
