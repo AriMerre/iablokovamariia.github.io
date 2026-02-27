@@ -13,9 +13,9 @@ nav {
     
     /* Используем margin, чтобы отодвинуть меню от краев экрана, 
        как на втором макете. Подберите точные значения по макету */
-    margin-top: 40px; 
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-top: 60px; 
+    margin-left: 40px;
+    margin-right: 40px;
     
     /* Сохраняем ваши шрифты и плавный переход */
     font-size: 1.6rem; 
@@ -42,7 +42,7 @@ body {
 }
 
 .box{  
-    margin: 100px -40px; 
+    margin: 80px -40px; 
 }
 .hero {
     background-color: #ffffff; /* Белый фон для первой части */
