@@ -41,6 +41,9 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+.box{  
+    margin: 100px -40px; 
+}
 .hero {
     background-color: #ffffff; /* Белый фон для первой части */
     margin: 0 -40px;          /* Растягиваем до краев экрана, если у body есть отступы */
