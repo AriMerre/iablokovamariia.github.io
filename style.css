@@ -1,7 +1,4 @@
 nav {
-    backdrop-filter: blur(5px);
-    background: rgba(255, 255, 255, 0.3); /* Полупрозрачный белый */
-    margin: 100px -40px; 
     position: fixed;
     top: 0;
     left: 0;
@@ -19,11 +16,15 @@ nav {
     margin-top: 50px; 
     margin-left: 40px;
     margin-right: 40px;
+    /* Эффект размытия */
+    backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(5px); /* Поддержка Safari */
+    background: rgba(255, 255, 255, 0.3); /* Полупрозрачный белый фон */
     
     /* Сохраняем ваши шрифты и плавный переход */
     font-size: 1.8rem; 
     font-weight: 500; 
-    transition: color 0.3s;
+    transition: background 0.3s, color 0.3s;
 }
 
 /* Для смены цвета (ОБЯЗАТЕЛЬНО С !IMPORTANT) */
