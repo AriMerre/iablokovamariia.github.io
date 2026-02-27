@@ -12,7 +12,14 @@ nav {
     font-weight: 500; 
 }
 
+/* Этот класс применится, когда мы дойдем до черной секции */
+nav.white-nav {
+    color: #fff;
+}
 
+nav.white-nav a {
+    color: #fff; /* Ссылки становятся белыми */
+}
 
 body {
     font-family: 'Outfit', sans-serif; 
