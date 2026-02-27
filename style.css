@@ -1,14 +1,26 @@
 nav {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-    z-index: 1000; /* Чтобы меню было поверх всех картинок */
-    transition: background-color 0.3s, color 0.3s; /* Плавный переход цвета */
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
-    padding: 40px 10px 20px;
+    align-items: baseline;
+    
+    /* ВАЖНО: box-sizing, чтобы паддинг не раздувал ширину */
+    box-sizing: border-box; 
+    
+    /* Используем margin, чтобы отодвинуть меню от краев экрана, 
+       как на втором макете. Подберите точные значения по макету */
+    margin-top: 40px; 
+    margin-left: 100px;
+    margin-right: 100px;
+    
+    /* Сохраняем ваши шрифты и плавный переход */
     font-size: 1.6rem; 
     font-weight: 500; 
+    transition: color 0.3s;
 }
 
 nav.white-nav {
