@@ -3,7 +3,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px; /* Фиксированная высота полосы */
+    height: 120px; /* Фиксированная высота полосы */
     
     display: flex;
     justify-content: space-between;
