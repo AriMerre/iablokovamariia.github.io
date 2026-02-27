@@ -3,13 +3,13 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    height: 90px; /* Фиксированная высота полосы */
+    height: 98px; /* Фиксированная высота полосы */
     
     display: flex;
     justify-content: space-between;
     align-items: center; /* Центрируем имя и меню внутри полосы */
     
-    padding: 0px 40px; /* Отступы текста от краев экрана */
+    padding: 60px 40px 0; /* Отступы текста от краев экрана */
     box-sizing: border-box;
     z-index: 1000;
     /* Эффект размытия */
