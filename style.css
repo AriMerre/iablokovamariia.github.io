@@ -15,7 +15,7 @@ nav {
     /* Эффект размытия */
     backdrop-filter: blur(5px); 
     -webkit-backdrop-filter: blur(5px); /* Поддержка Safari */
-    background: rgba(255, 255, 255, 0.3); /* Полупрозрачный белый фон */
+    background: rgba(255, 255, 255, 0.2); /* Полупрозрачный белый фон */
     
     /* Сохраняем ваши шрифты и плавный переход */
     font-size: 1.8rem; 
@@ -161,7 +161,7 @@ p {
 .projects-header h2 {
         font-size: 5rem;
         font-weight: 400;
-        line-height: 0.5;        
+        line-height: 0.6;        
  }
 
 .projects-date {
