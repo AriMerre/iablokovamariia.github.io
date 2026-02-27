@@ -1,3 +1,12 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 10px 20px;
+    font-size: 1.6rem; 
+    font-weight: 500; 
+}
+
+
 body {
     font-family: 'Outfit', sans-serif; 
     margin: 0;
@@ -86,8 +95,6 @@ h1 {
 }
 
 
-
-
 p {
     font-weight: 300; 
     line-height: 1.5;
@@ -97,15 +104,6 @@ p {
     color: #514FBB; /* Тот самый сине-фиолетовый оттенок */
     font-weight: 400; 
 }
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 10px 20px;
-    font-size: 1.6rem; 
-    font-weight: 500; 
-}
-
 
 
 .about-text {
@@ -134,7 +132,7 @@ nav {
 .projects-header h2 {
         font-size: 5rem;
         font-weight: 400;
-        line-height: 1.5;        
+        line-height: 1;        
  }
 
 .projects-date {
@@ -227,17 +225,7 @@ nav {
 }
 
 /* --- QUOTE SECTION --- */
-.quote-section {
-    background-color: #ffffff; /* Белый фон для первой части */
-    margin: 0 -40px;          /* Растягиваем до краев экрана, если у body есть отступы */
-    /* Тень: первый блок — нижняя, второй (после запятой) — верхняя */
-    box-shadow: 
-        0 10px 30px rgba(0, 0, 0, 0), 
-        0 -10px 30px rgba(0, 0, 0, 0.05);
-    
-    position: relative;        /* Чтобы тени корректно отображались поверх фона */
-    z-index: 5;
-    
+.quote-section {  
     padding: 120px 40px;
     text-align: center;
     max-width: 1000px;
@@ -260,6 +248,15 @@ nav {
 
 /* --- FOOTER --- */
 .footer {
+    background-color: #ffffff; /* Белый фон для первой части */
+    margin: 0 -40px;          /* Растягиваем до краев экрана, если у body есть отступы */
+    /* Тень: первый блок — нижняя, второй (после запятой) — верхняя */
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0), 
+        0 -10px 30px rgba(0, 0, 0, 0.05);
+    
+    position: relative;        /* Чтобы тени корректно отображались поверх фона */
+    z-index: 5;
     padding: 80px 40px 120px;
     border-top: 1px solid #eee;
 }
@@ -275,7 +272,7 @@ nav {
     justify-content: flex-start; 
     align-items: flex-start;
     /* Указываем точное расстояние между емейлом и ссылками */
-    gap: 100px; /* Настройте это число под себя */
+    gap: 300px; /* Настройте это число под себя */
 }
 
 .footer-email a {
