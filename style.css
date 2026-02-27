@@ -156,16 +156,17 @@ nav {
 .project-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    line-height: 1.5;
+    line-height: 1;
     gap: 20px;
 }
 
 .project-card h3 { 
     font-size: 1.8rem; 
     font-weight: 200; 
-    padding: -10px 20px;
+    line-height: 1;
+    margin-left: 20px;
 }
-.project-card p { font-size: 1.5rem; color: #666; font-weight: 200; padding: -10px 20px;}
+.project-card p { font-size: 1.5rem; color: #666; font-weight: 200; line-height: 1; margin-left: 20px;}
 
 /* Адаптивность для мобильных */
 @media (max-width: 768px) {
