@@ -1,36 +1,31 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
+    const nav = document.querySelector('nav');
+    const servicesSection = document.querySelector('.services');
+    const revealTexts = document.querySelectorAll('.reveal-text');
+
+    // --- 1. АНИМАЦИЯ ПОЯВЛЕНИЯ ТЕКСТА ---
+    const triggerReveal = () => {
+        revealTexts.forEach((text, index) => {
+            setTimeout(() => {
+                text.classList.add('active');
+            }, index * 250); // Задержка между строчками
+        });
+    };
+    
+    // Запускаем через полсекунды после загрузки
+    setTimeout(triggerReveal, 500);
+
+    // --- 2. СМЕНА ЦВЕТА НАВИГАЦИИ ПРИ СКРОЛЛЕ ---
     window.addEventListener('scroll', () => {
-        const nav = document.querySelector('nav'); 
-        const servicesSection = document.querySelector('.services'); 
-        
         if (servicesSection && nav) {
-            const sectionTop = servicesSection.getBoundingClientRect().top;
+            const rect = servicesSection.getBoundingClientRect();
             
-            // Если секция дошла до верха (с учетом отступа навигации 40px)
-            if (sectionTop <= 60) {
+            // Если верх черной секции коснулся верха экрана
+            if (rect.top <= 50) { 
                 nav.classList.add('white-nav');
             } else {
                 nav.classList.remove('white-nav');
             }
         }
     });
-});
-
-
-document.addEventListener("DOMContentLoaded", () => {
-    // Находим все элементы для анимации
-    const revealTexts = document.querySelectorAll('.reveal-text');
-
-    // Функция запуска
-    const triggerReveal = () => {
-        revealTexts.forEach((text, index) => {
-            // Добавляем небольшую задержку для каждого следующего элемента
-            setTimeout(() => {
-                text.classList.add('active');
-            }, index * 200); 
-        });
-    };
-
-    // Запускаем через мгновение после загрузки
-    setTimeout(triggerReveal, 300);
 });
