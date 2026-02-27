@@ -144,6 +144,7 @@ nav {
     padding: 0 10px;
 }
 
+/* --- PROJECTS SECTION --- */
 
 .image-collage {
     display: grid;
@@ -159,6 +160,7 @@ nav {
     border-radius: 16px;
     object-fit: cover;
 }
+
 
 .project-grid {
     display: grid;
