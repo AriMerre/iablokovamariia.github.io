@@ -6,6 +6,24 @@ nav {
     font-weight: 500; 
 }
 
+.nav-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Чтобы меню было поверх всех картинок */
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход цвета */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Ссылки внутри навигации */
+.nav-container a {
+    color: #000; /* По умолчанию черный цвет */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
 
 body {
     font-family: 'Outfit', sans-serif; 
