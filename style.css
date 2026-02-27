@@ -1,12 +1,4 @@
 nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 10px 20px;
-    font-size: 1.6rem; 
-    font-weight: 500; 
-}
-
-.nav-container {
     position: fixed;
     top: 0;
     width: 100%;
@@ -15,14 +7,11 @@ nav {
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
+    padding: 40px 10px 20px;
+    font-size: 1.6rem; 
+    font-weight: 500; 
 }
 
-/* Ссылки внутри навигации */
-.nav-container a {
-    color: #000; /* По умолчанию черный цвет */
-    text-decoration: none;
-    transition: color 0.3s;
-}
 
 
 body {
