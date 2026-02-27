@@ -2,7 +2,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 90%;
+    width: 95%;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
@@ -66,21 +66,6 @@ h1 {
     padding: 0 10px;
     color: #000;
 }
-/* Для появления текста */
-.reveal-mask {
-    overflow: hidden;
-    display: block;
-}
-.reveal-text {
-    display: block;
-    transform: translateY(110%);
-    transition: transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
-}
-.reveal-text.active {
-    transform: translateY(0);
-}
-
-
 
 .wrapper {
   display: grid;
