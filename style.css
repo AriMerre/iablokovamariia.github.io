@@ -85,14 +85,14 @@ h1 {
   }
 }
 
-.projects-header h2 {
+projects-header {
     display: flex;
     justify-content: space-between; /* Расталкивает текст и дату в разные стороны */
     align-items: baseline;          /* Выравнивает их по нижней линии текста */
     width: 100%;
 }
 
-h2 {
+.h2 {
         font-size: 5rem;
         font-weight: 400;
         padding: 0 10px;
