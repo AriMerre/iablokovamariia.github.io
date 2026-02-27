@@ -23,12 +23,12 @@ nav {
     transition: color 0.3s;
 }
 
+/* Для смены цвета (ОБЯЗАТЕЛЬНО С !IMPORTANT) */
 nav.white-nav {
-    color: #fff !important;
+    color: #ffffff !important;
 }
-
 nav.white-nav a {
-    color: #fff !important;
+    color: #ffffff !important;
 }
 
 
@@ -66,25 +66,21 @@ h1 {
     padding: 0 10px;
     color: #000;
 }
-
-/* Контейнер-маска */
+/* Для появления текста */
 .reveal-mask {
-    overflow: hidden; 
+    overflow: hidden;
     display: block;
-    line-height: 1.2; /* Подберите под ваш шрифт */
 }
-
-/* Сам текст */
 .reveal-text {
     display: block;
-    transform: translateY(110%); /* Полностью прячем текст внизу */
-    transition: transform 1.2s cubic-bezier(0.19, 1, 0.22, 1); /* Плавное "швейцарское" движение */
+    transform: translateY(110%);
+    transition: transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
 }
-
-/* Класс, который мы добавим для запуска анимации */
 .reveal-text.active {
     transform: translateY(0);
 }
+
+
 
 .wrapper {
   display: grid;
