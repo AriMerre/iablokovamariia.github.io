@@ -1,13 +1,23 @@
+// Скрипт для смены цвета навигации
 window.addEventListener('scroll', () => {
-    const nav = document.querySelector('nav'); // У вас в CSS просто nav
-    const services = document.querySelector('.services'); // Проверьте класс вашей черной секции!
+    // 1. Находим саму навигацию
+    const nav = document.querySelector('nav'); 
     
-    if (services) {
-        const top = services.getBoundingClientRect().top;
-        // Если верх черной секции дошел до верха экрана
-        if (top <= 60) { 
+    // 2. Находим черную секцию по классу .services
+    const servicesSection = document.querySelector('.services'); 
+    
+    // Если черная секция существует на странице
+    if (servicesSection) {
+        // Получаем позицию верхней границы черной секции относительно экрана
+        const sectionTop = servicesSection.getBoundingClientRect().top;
+        
+        // Когда верхняя граница секции оказывается выше 60px от верха экрана
+        // (настройте это число под высоту вашего маргина навигации)
+        if (sectionTop <= 60) {
+            // Добавляем класс white-nav, который делает текст белым
             nav.classList.add('white-nav');
         } else {
+            // Убираем класс, если мы выше черной секции
             nav.classList.remove('white-nav');
         }
     }
