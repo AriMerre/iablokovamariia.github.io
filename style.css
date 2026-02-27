@@ -10,7 +10,7 @@ body {
 .hero {
     background-color: #ffffff; /* Белый фон для первой части */
     margin: 0 -40px;          /* Растягиваем до краев экрана, если у body есть отступы */
-    padding: 60px 40px 60px 40px; /* Возвращаем внутренние отступы для контента */
+    padding: 40px 40px 60px 40px; /* Возвращаем внутренние отступы для контента */
     
     /* Тень: первый блок — нижняя, второй (после запятой) — верхняя */
     box-shadow: 
@@ -26,6 +26,7 @@ h1 {
     font-weight: 400;
     letter-spacing: -2px;
     margin-bottom: 20px;
+    padding: 0 10px;
     color: #000;
 }
 
@@ -33,7 +34,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   gap: 20px;
-  max-height: 1100px;
+  max-height: 900px;
   margin: 0 auto;
 }
 
