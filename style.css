@@ -2,9 +2,23 @@ body {
     font-family: 'Outfit', sans-serif; 
     margin: 0;
     padding: 0 20px;
-    background-color: #fff;
+    background-color: #FCFAFB;
     color: #000;
     -webkit-font-smoothing: antialiased;
+}
+
+.hero {
+    background-color: #ffffff; /* Белый фон для первой части */
+    margin: 0 -40px;          /* Растягиваем до краев экрана, если у body есть отступы */
+    padding: 0 40px 60px 40px; /* Возвращаем внутренние отступы для контента */
+    
+    /* Тень: первый блок — нижняя, второй (после запятой) — верхняя */
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.05), 
+        0 -10px 30px rgba(0, 0, 0, 0.05);
+    
+    position: relative;        /* Чтобы тени корректно отображались поверх фона */
+    z-index: 10;
 }
 
 h1 {
@@ -104,6 +118,10 @@ h2 {
 p {
     font-weight: 300; 
     line-height: 1.6;
+}
+
+.accent {
+    color: #7d7dff; /* Тот самый сине-фиолетовый оттенок */
 }
 
 nav {
