@@ -4,7 +4,6 @@ nav {
     width: 100%;
     z-index: 1000; /* Чтобы меню было поверх всех картинок */
     transition: background-color 0.3s, color 0.3s; /* Плавный переход цвета */
-    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     padding: 40px 10px 20px;
@@ -12,14 +11,14 @@ nav {
     font-weight: 500; 
 }
 
-/* Этот класс применится, когда мы дойдем до черной секции */
 nav.white-nav {
-    color: #fff;
+    color: #fff !important;
 }
 
 nav.white-nav a {
-    color: #fff; /* Ссылки становятся белыми */
+    color: #fff !important;
 }
+
 
 body {
     font-family: 'Outfit', sans-serif; 
