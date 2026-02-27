@@ -85,21 +85,22 @@ h1 {
   }
 }
 
-projects-header {
-    display: flex;
-    justify-content: space-between; /* Расталкивает текст и дату в разные стороны */
-    align-items: baseline;          /* Выравнивает их по нижней линии текста */
-    width: 100%;
+.projects-header {
+    display: flex;                /* Включаем Flexbox */
+    justify-content: space-between; /* Расталкиваем элементы по краям */
+    align-items: baseline;        /* Выравниваем их по нижней линии текста */
+    margin-bottom: 40px;          /* Отступ до самих карточек с проектами */
+    padding: 0 20px;              /* Если нужен отступ от краев экрана */
 }
 
-.h2 {
+.projects-header h2 {
         font-size: 5rem;
         font-weight: 400;
         padding: 0 10px;
         line-height: 4;        
  }
 
-.year {
+.projects-date {
         font-size: 1.6rem;            
         font-weight: 400;             
         color: #000;                   
