@@ -96,6 +96,7 @@ h2 {
         font-size: 5rem;
         font-weight: 400;
         padding: 0 10px;
+        line-height: 4;        
  }
 
 .year {
@@ -113,6 +114,7 @@ p {
 
 .accent {
     color: #514FBB; /* Тот самый сине-фиолетовый оттенок */
+    font-weight: 400; 
 }
 
 nav {
@@ -191,7 +193,7 @@ nav {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
-    margin: 0 auto;
+    margin-left: 50%;
 }
 
 .services-title {
@@ -202,7 +204,7 @@ nav {
 }
 
 .services-list {
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .service-item {
@@ -213,6 +215,7 @@ nav {
     font-size: 1.8rem;
     font-weight: 400;
     margin-bottom: 10px;
+    line-height: 1.5;
 }
 
 .service-item p {
@@ -234,7 +237,7 @@ nav {
     color: #514FBB; /* Цвет как на макете */
     font-size: 1.8rem;
     margin-bottom: 20px;
-    font-weight: 300; 
+    font-weight: 400; 
 }
 
 .quote-text {
