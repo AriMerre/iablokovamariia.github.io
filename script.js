@@ -1,24 +1,36 @@
-// Скрипт для смены цвета навигации
-window.addEventListener('scroll', () => {
-    // 1. Находим саму навигацию
-    const nav = document.querySelector('nav'); 
-    
-    // 2. Находим черную секцию по классу .services
-    const servicesSection = document.querySelector('.services'); 
-    
-    // Если черная секция существует на странице
-    if (servicesSection) {
-        // Получаем позицию верхней границы черной секции относительно экрана
-        const sectionTop = servicesSection.getBoundingClientRect().top;
+document.addEventListener('DOMContentLoaded', () => {
+    window.addEventListener('scroll', () => {
+        const nav = document.querySelector('nav'); 
+        const servicesSection = document.querySelector('.services'); 
         
-        // Когда верхняя граница секции оказывается выше 60px от верха экрана
-        // (настройте это число под высоту вашего маргина навигации)
-        if (sectionTop <= 60) {
-            // Добавляем класс white-nav, который делает текст белым
-            nav.classList.add('white-nav');
-        } else {
-            // Убираем класс, если мы выше черной секции
-            nav.classList.remove('white-nav');
+        if (servicesSection && nav) {
+            const sectionTop = servicesSection.getBoundingClientRect().top;
+            
+            // Если секция дошла до верха (с учетом отступа навигации 40px)
+            if (sectionTop <= 60) {
+                nav.classList.add('white-nav');
+            } else {
+                nav.classList.remove('white-nav');
+            }
         }
-    }
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Находим все элементы для анимации
+    const revealTexts = document.querySelectorAll('.reveal-text');
+
+    // Функция запуска
+    const triggerReveal = () => {
+        revealTexts.forEach((text, index) => {
+            // Добавляем небольшую задержку для каждого следующего элемента
+            setTimeout(() => {
+                text.classList.add('active');
+            }, index * 200); 
+        });
+    };
+
+    // Запускаем через мгновение после загрузки
+    setTimeout(triggerReveal, 300);
 });
