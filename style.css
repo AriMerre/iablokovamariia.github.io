@@ -459,7 +459,7 @@ p {
 
 /* Теперь настраиваем их точечно, чтобы текст не слипался */
 .project-name {
-    margin-top: 60px;    /* Отступ сверху от имени (Iablokova Mariia) */
+    margin-top: 50px;    /* Отступ сверху от имени (Iablokova Mariia) */
     margin-bottom: 20px; /* Отступ снизу до розовой строки */
 }
 
@@ -476,10 +476,18 @@ p {
     align-items: start;
 }
 
-.intro-img{
-    max-width: 100%;
-    height: auto;
-    display: block; /* Убирает лишний отступ снизу */
+
+.intro{
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.intro img{
+  width: 100%;       /* Растягивается на всю ширину ячейки */
+    height: auto;      /* Сохраняет пропорции */
+    display: block;    /* Убирает микро-отступ снизу */
+    max-width: 100%;   /
 }
 
 .intro-main{
