@@ -1,6 +1,3 @@
-* {
-    outline: 1px solid red; /* Подсветит границы всех блоков */
-}
 
 nav {
     position: fixed;
@@ -467,7 +464,10 @@ p {
     margin-bottom: 10px; /* Расстояние между розовой строкой и описанием */
 }
 
-
+.about-project {
+    margin-bottom: 20px; /* Расстояние между розовой строкой и описанием */
+}
+    
 .intro-grid {
     display: grid;
     /* Создаем 12 колонок для максимальной гибкости */
@@ -495,7 +495,10 @@ p {
 }
 
 .intro-secondary{
-   grid-column: 1 / -1; /* На всю ширину */
+    grid-column: 1 / -1; /* На всю ширину */
+    position: relative; /* Обязательно для позиционирования текста внутри */
+    width: 100%;
+    overflow: hidden;    /* Чтобы гифка не вылезала за скругления */
 }
 
 .intro-third{
@@ -505,3 +508,26 @@ p {
     grid-column: 4 / span 8; /* Сдвигаем вправо для динамики */
 }
 
+
+.intro-secondary img {
+    width: 100%;
+    display: block;
+}
+
+.intro-overlay {
+    position: absolute;
+    bottom: 30px; /* Отступ от нижнего края */
+    left: 0;
+    width: 100%;  /* Растягиваем на всю ширину, чтобы центрировать текст */
+    text-align: center;
+    padding: 0 20px; /* Чтобы текст не прилипал к краям на узких экранах */
+}
+
+.intro-overlay p {
+    color: #ffffff;      /* Чистый белый цвет */
+    font-size: 1.5rem;   /* Подбери размер под свой макет */
+    font-weight: 700;    /* Жирное начертание (Bold) */
+    margin: 0;
+    letter-spacing: -0.02em; /* Немного сужаем буквы для стиля */
+    text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); /* Легкая тень, чтобы текст читался на светлом фоне */
+}
