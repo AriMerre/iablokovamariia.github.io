@@ -455,7 +455,7 @@ p {
 
 /* Теперь настраиваем их точечно, чтобы текст не слипался */
 .project-name {
-    margin-top: 30px;    /* Отступ сверху от имени (Iablokova Mariia) */
+    margin-top: 40px;    /* Отступ сверху от имени (Iablokova Mariia) */
     margin-bottom: 10px; /* Отступ снизу до розовой строки */
 }
 
