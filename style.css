@@ -1,3 +1,7 @@
+* {
+    outline: 1px solid red; /* Подсветит границы всех блоков */
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -455,8 +459,8 @@ p {
 
 /* Теперь настраиваем их точечно, чтобы текст не слипался */
 .project-name {
-    margin-top: 40px;    /* Отступ сверху от имени (Iablokova Mariia) */
-    margin-bottom: 10px; /* Отступ снизу до розовой строки */
+    margin-top: 60px;    /* Отступ сверху от имени (Iablokova Mariia) */
+    margin-bottom: 20px; /* Отступ снизу до розовой строки */
 }
 
 .subtitle {
@@ -470,8 +474,6 @@ p {
     grid-template-columns: repeat(12, 1fr);
     gap: 20px; /* Убираем стандартные зазоры для эффекта бесшовности */
     align-items: start;
-    padding-top: 100px;
-    margin: 0 auto;
 }
 
 .intro-img{
