@@ -378,9 +378,8 @@ p {
 /* Общие настройки для страницы проекта */
 
 
-.close-button {
-  position: fixed;   /* Кнопка будет "плавать" при скролле */
-  top: 40px;         /* Отступ сверху */
+.close-button {  
+  top: 80px;         /* Отступ сверху */
   right: 40px;       /* Отступ справа (как на референсе) */
   width: 40px;
   height: 40px;
@@ -425,6 +424,16 @@ p {
     color: #E23B67;
 }
 
+.about-project {
+    font-size: 1.6rem;
+    max-width: 800px;
+    line-height: 1.3;
+    font-weight: 300; 
+    padding: 0 10px;
+    color: #E23B67;
+}
+
+
 .hero-image-container {
   display: grid;
   display: flex;
@@ -442,7 +451,7 @@ p {
 
 .hero-main{
   grid-column: span 2;
-  border-row: span 2;
+  border-row: span 1;
   border-radius: 24px;
 }
 
