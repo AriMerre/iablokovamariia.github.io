@@ -375,7 +375,6 @@ p {
 
 /* --- IPKN --- */
 
-/* Общие настройки для страницы проекта */
 
 
 .close-button {  
@@ -415,10 +414,17 @@ p {
 }
 
 
+.projects-name {
+    display: flex;                /* Включаем Flexbox */
+    justify-content: space-between; /* Расталкиваем элементы по краям */
+    align-items: baseline;        /* Выравниваем их по нижней линии текста */
+    padding: 0 10px;              /* Если нужен отступ от краев экрана */
+}
+
+
 .subtitle {
     font-size: 1.8rem;
     max-width: 1020px;
-    line-height: 1.5;
     margin: 40px 0;
     font-weight: 300; 
     padding: 0 10px;
@@ -427,7 +433,7 @@ p {
 
 .about-project {
     font-size: 1.3rem;
-    max-width: 800px;
+    max-width: 1000px;
     line-height: 1.2;
     font-weight: 300; 
     padding: 0 10px;
@@ -437,15 +443,15 @@ p {
     display: grid;
     /* Создаем 12 колонок для максимальной гибкости */
     grid-template-columns: repeat(12, 1fr);
-    gap: 20; /* Убираем стандартные зазоры для эффекта бесшовности */
+    gap: 0; /* Убираем стандартные зазоры для эффекта бесшовности */
     align-items: start;
     padding-top: 100px;
 }
 
 .intro-img{
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    display: block;
+    display: block; /* Убирает лишний отступ снизу */
 }
 
 .intro-main{
