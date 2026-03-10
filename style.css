@@ -421,10 +421,19 @@ p {
     padding: 0 10px;              /* Если нужен отступ от краев экрана */
 }
 
+.project-name h2 {
+        font-size: 5rem;
+        font-weight: 400;     
+ }
+
+.project-date {
+        font-size: 1.6rem;            
+        font-weight: 400;             
+        color: #000;                   
+}
 
 .subtitle {
     font-size: 1.8rem;
-    margin: 40px 0;
     font-weight: 300; 
     padding: 0 10px;
     color: #E23B67;
