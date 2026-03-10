@@ -414,7 +414,7 @@ p {
 }
 
 
-.projects-name {
+.project-name {
     display: flex;                /* Включаем Flexbox */
     justify-content: space-between; /* Расталкиваем элементы по краям */
     align-items: baseline;        /* Выравниваем их по нижней линии текста */
@@ -424,7 +424,6 @@ p {
 
 .subtitle {
     font-size: 1.8rem;
-    max-width: 1020px;
     margin: 40px 0;
     font-weight: 300; 
     padding: 0 10px;
@@ -433,8 +432,7 @@ p {
 
 .about-project {
     font-size: 1.3rem;
-    max-width: 1000px;
-    line-height: 1.2;
+    max-width: 900px;
     font-weight: 300; 
     padding: 0 10px;
 }
@@ -443,9 +441,10 @@ p {
     display: grid;
     /* Создаем 12 колонок для максимальной гибкости */
     grid-template-columns: repeat(12, 1fr);
-    gap: 0; /* Убираем стандартные зазоры для эффекта бесшовности */
+    gap: 20px; /* Убираем стандартные зазоры для эффекта бесшовности */
     align-items: start;
     padding-top: 100px;
+    margin: 0 auto;
 }
 
 .intro-img{
