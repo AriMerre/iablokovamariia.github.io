@@ -511,12 +511,15 @@ p {
     display: block;
 }
 
-.intro-third{
-    position: relative;
-    grid-column: span 6;
+.intro-third {
+    grid-column: span 6; /* Настрой ширину под макет */
+    background-color: #FFABC2; /* Твой розовый цвет */
     border-radius: 24px;
-    overflow: hidden;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
 }
+
 .intro-fourth{
     position: relative;
     grid-column: span 6;
@@ -549,16 +552,37 @@ p {
     text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 }
 
-.intro-overlay2 {
-    position: absolute;
-    width: 100%;  /* Растягиваем на всю ширину, чтобы центрировать текст */
-    padding: 0 10px; /* Чтобы текст не прилипал к краям на узких экранах */
+.intro-row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    align-items: stretch; /* Это заставляет обе колонки быть одной высоты */
 }
 
-.intro-overlay2 p {    
-    color: #ffffff;
-    font-size: 1.8rem;   /* Baloo может казаться чуть меньше обычных шрифтов, можно увеличить */
-    font-weight: 400;    /* Делаем его жирным как на референсе */
-    margin: 0;
+
+
+.intro-third p {
+    color: white;
+    font-size: 1.8rem;
     line-height: 1.5;
+    font-weight: 500;
+    margin: 0;
+    z-index: 2;
+}
+
+
+
+.intro-fourth img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Картинка заполнит всю высоту, подстраиваясь под левую колонку */
+    display: block;
+}
+
+/* Позиционирование иконок в углу (сердечки и т.д.) */
+.mini-icons {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 80px;
 }
