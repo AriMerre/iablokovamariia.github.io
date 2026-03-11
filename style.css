@@ -10,7 +10,7 @@ nav {
     justify-content: space-between;
     align-items: center; /* Центрируем имя и меню внутри полосы */
     
-    padding: 40px 40px 0; /* Отступы текста от краев экрана */
+    padding: 60px 40px 0; /* Отступы текста от краев экрана */
     box-sizing: border-box;
     z-index: 1000;
     /* Эффект размытия */
