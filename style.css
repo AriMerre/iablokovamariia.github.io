@@ -495,10 +495,11 @@ p {
 }
 
 .intro-secondary {
+    grid-column: 1 / -1;
     position: relative;
     width: 100%;            /* Растягиваем на всю ширину */
-    height: 450px;          /* Задаем фиксированную высоту (подберите под макет) */
-    border-radius: 32px;
+    height: 600px;          /* Задаем фиксированную высоту (подберите под макет) */
+    border-radius: 24px;
     overflow: hidden;       /* Скрывает части видео, которые выходят за 450px */
 }
 
@@ -511,10 +512,14 @@ p {
 }
 
 .intro-third{
-    grid-column: 2 / span 10; /* Чуть уже, создаем "воздух" по бокам */
+    grid-column: span 6;
+    border-row: span 1;
+    border-radius: 24px;
 }
 .intro-fourth{
-    grid-column: 4 / span 8; /* Сдвигаем вправо для динамики */
+    grid-column: span 6;
+    border-row: span 1;
+    border-radius: 24px;
 }
 
 
