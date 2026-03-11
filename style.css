@@ -473,7 +473,8 @@ p {
     /* Создаем 12 колонок для максимальной гибкости */
     grid-template-columns: repeat(12, 1fr);
     gap: 20px; /* Убираем стандартные зазоры для эффекта бесшовности */
-    align-items: start;
+    box-sizing: border-box;
+    align-items: stretch; /* Это сделает розовый блок и телефон одной высоты */
 }
 
 
