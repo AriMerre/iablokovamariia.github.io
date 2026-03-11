@@ -525,10 +525,13 @@ p {
 }
 
 .intro-overlay p {
-    color: #ffffff;      /* Чистый белый цвет */
-    font-size: 1.5rem;   /* Подбери размер под свой макет */
-    font-weight: 700;    /* Жирное начертание (Bold) */
+    /* Применяем шрифт Baloo 2 */
+    font-family: 'Baloo 2'; 
+    
+    color: #ffffff;
+    font-size: 2.2rem;   /* Baloo может казаться чуть меньше обычных шрифтов, можно увеличить */
+    font-weight: 700;    /* Делаем его жирным как на референсе */
     margin: 0;
-    letter-spacing: -0.02em; /* Немного сужаем буквы для стиля */
-    text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); /* Легкая тень, чтобы текст читался на светлом фоне */
+    line-height: 1.2;
+    text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 }
