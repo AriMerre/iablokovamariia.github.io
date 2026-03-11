@@ -530,8 +530,22 @@ p {
     
     color: #ffffff;
     font-size: 2.2rem;   /* Baloo может казаться чуть меньше обычных шрифтов, можно увеличить */
-    font-weight: 700;    /* Делаем его жирным как на референсе */
+    font-weight: 500;    /* Делаем его жирным как на референсе */
     margin: 0;
     line-height: 1.2;
     text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.intro-overlay2 {
+    position: absolute;
+    width: 100%;  /* Растягиваем на всю ширину, чтобы центрировать текст */
+    padding: 0 10px; /* Чтобы текст не прилипал к краям на узких экранах */
+}
+
+.intro-overlay2 p {    
+    color: #ffffff;
+    font-size: 1.8rem;   /* Baloo может казаться чуть меньше обычных шрифтов, можно увеличить */
+    font-weight: 400;    /* Делаем его жирным как на референсе */
+    margin: 0;
+    line-height: 1.5;
 }
