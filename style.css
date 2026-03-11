@@ -10,7 +10,7 @@ nav {
     justify-content: space-between;
     align-items: center; /* Центрируем имя и меню внутри полосы */
     
-    padding: 40px 60px 0; /* Отступы текста от краев экрана */
+    padding: 40px 50px 0; /* Отступы текста от краев экрана */
     box-sizing: border-box;
     z-index: 1000;
     /* Эффект размытия */
@@ -542,10 +542,9 @@ p {
     font-family: 'Baloo 2'; 
     
     color: #ffffff;
-    font-size: 3.5rem;   /* Baloo может казаться чуть меньше обычных шрифтов, можно увеличить */
+    font-size: 2rem;   /* Baloo может казаться чуть меньше обычных шрифтов, можно увеличить */
     font-weight: 700;    /* Делаем его жирным как на референсе */
     margin: 0;
-    line-height: 1.2;
     text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 }
 
