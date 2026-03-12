@@ -609,7 +609,8 @@ p {
     display: block;
 }
 
-.intro-third h {
+.intro target h {
+    text-transform: capitalize;
     color: white;
     font-size: 1.8rem;
     font-weight: 500;
@@ -618,7 +619,7 @@ p {
     z-index: 2;
 }
 
-.intro-third p {
+.intro target p {
     color: white;
     font-size: 1.3rem;
     line-height: 1.5;
