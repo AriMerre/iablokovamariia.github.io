@@ -427,7 +427,7 @@ p {
         font-weight: 400;     
  }
 
-.intro-researc h2 {
+.intro-research h2 {
         font-size: 5rem;
         font-weight: 400;     
  }
@@ -606,7 +606,6 @@ p {
     position: relative;  /* Обязательно: это "якорь" для текста */
     border-radius: 24px;
     overflow: hidden;
-    height: 400px;       /* Можно задать фиксированную высоту для аккуратности */
 }
 
 .intro.target img {
@@ -617,7 +616,7 @@ p {
 }
 
 /* Создаем слой поверх картинки */
-.grid-overlay {
+.grid-overlay2 {
     position: absolute;
     top: 0;
     left: 0;
@@ -631,20 +630,19 @@ p {
     z-index: 2;
 }
 
-.intro target h {
+.grid-overlay2 h3 {
     text-transform: capitalize;
-    color: white;
+    color: white !important; /* !important только если что-то другое перебивает цвет */
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: 700;
     margin: 0 0 10px 0;
-    z-index: 2;
 }
 
-.intro target p {
-    color: white;
-    font-size: 1.3rem;
-    line-height: 1.5;
-    font-weight: 500;
-    margin: 0 0 10px 0;
-    z-index: 2;
+.grid-overlay2 p {
+    color: white !important;
+    font-size: 1.3rem; /* Чуть уменьшил, чтобы текст не "душил" картинку */
+    line-height: 1.4;
+    font-weight: 400;
+    margin: 0;
 }
+
