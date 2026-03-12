@@ -427,6 +427,11 @@ p {
         font-weight: 400;     
  }
 
+.intro-researc h2 {
+        font-size: 5rem;
+        font-weight: 400;     
+ }
+
 .project-date {
         font-size: 1.6rem;            
         font-weight: 400;             
