@@ -513,7 +513,7 @@ p {
 }
 
 .intro-third {
-    grid-column: span 5; /* Настрой ширину под макет */
+    grid-column: span 6; /* Настрой ширину под макет */
     background-color: #FFABC2; /* Твой розовый цвет */
     border-radius: 24px;
     position: relative;
@@ -522,7 +522,7 @@ p {
 }
 
 .intro-fourth{
-    grid-column: span 7;
+    grid-column: span 6;
     border-radius: 24px;
     display: block;
 }
