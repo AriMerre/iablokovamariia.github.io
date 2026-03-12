@@ -573,8 +573,7 @@ p {
     font-size: 1.8rem;
     line-height: 1.5;
     font-weight: 500;
-    max-width: 400px;
-    margin: 0 0 10px 0;
+    padding: 20px;
     z-index: 2;
 }
 
